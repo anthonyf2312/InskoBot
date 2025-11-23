@@ -1,3 +1,9 @@
+<div align="center">
+
+![INSKO Bot Banner](public/banner.png)
+
+<img src="public/profile.png" alt="INSKO Bot Profile" width="150" height="150" style="border-radius: 50%;">
+
 # INSKO Bot
 
 [![Discord.js](https://img.shields.io/badge/discord.js-v14.25.0-blue.svg?logo=discord&logoColor=white)](https://discord.js.org/)
@@ -6,7 +12,11 @@
 [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
 [![MongoDB](https://img.shields.io/badge/MongoDB-v9.0.0-47A248.svg?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 
-A powerful, all-in-one Discord bot designed for Insko. Built with Discord.js v14 and Sapphire Framework, featuring beautiful **Components V2** message designs.
+</div>
+
+A powerful, all-in-one Discord bot designed exclusively for Insko's Discord community. Built with Discord.js v14 and Sapphire Framework, featuring beautiful **Components V2** message designs.
+
+**Note:** This is a private bot and is not available for public use or invitation to other servers.
 
 ## ✨ Features
 
@@ -166,9 +176,27 @@ Built with modern technologies:
 - **YouTube Data API v3** - Official YouTube integration
 - **PubSubHubbub** - Real-time push notifications
 
-## 📄 License
+## 📄 Legal & Privacy
 
-This project is provided as-is for educational and personal use.
+- **[Terms of Service](TERMS_OF_SERVICE.md)** - Terms and conditions for using the bot
+- **[Privacy Policy](PRIVACY_POLICY.md)** - How we collect, use, and protect your data
+- **[License](LICENSE)** - MIT License for the source code
+
+By using INSKO Bot, you agree to our Terms of Service and Privacy Policy.
+
+## 🔒 Data & Security
+
+We take your privacy seriously:
+
+- ✅ **No data selling** - Your data is never sold or shared with third parties for marketing
+- ✅ **Minimal collection** - We only collect data necessary for bot functionality
+- ✅ **Secure storage** - All data is stored in encrypted MongoDB database
+- ✅ **User control** - Members can request data deletion by contacting server administrators
+- ✅ **Transparent AI** - AI analysis is opt-in and only for moderation assistance
+- ✅ **GDPR & CCPA compliant** - We respect your data rights
+- ✅ **Private bot** - Developed exclusively for Insko's community
+
+For details, see our [Privacy Policy](PRIVACY_POLICY.md).
 
 ---
 
