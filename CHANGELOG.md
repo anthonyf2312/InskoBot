@@ -101,6 +101,6 @@ Ideas for future updates:
 
 ## 📝 Notes
 
-- This is a private bot for specific servers
-- Optimized for content creator communities
+- This is a private bot for Insko
+- Optimized for Insko
 - Built with Discord.js v14 and Sapphire Framework
