@@ -1,6 +1,6 @@
 <div align="center">
 
-![INSKO Bot Banner](public/banner.png)
+![INSKO Bot Banner](public/banner.png?v=2)
 
 # INSKO Bot
 
