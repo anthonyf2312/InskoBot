@@ -1,11 +1,6 @@
 <div align="center">
 
-<div style="position: relative; display: inline-block;">
-  <img src="public/banner.png" alt="INSKO Bot Banner" style="display: block; width: 100%; max-width: 1024px;">
-  <img src="public/profile.png" alt="INSKO Bot Profile" style="position: absolute; bottom: -75px; left: 50%; transform: translateX(-50%); width: 150px; height: 150px; border-radius: 50%; border: 5px solid #ffffff; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-</div>
-
-<div style="height: 85px;"></div>
+![INSKO Bot Banner](public/banner.png)
 
 # INSKO Bot
 
