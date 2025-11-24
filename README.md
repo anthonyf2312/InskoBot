@@ -7,7 +7,7 @@
 [![Discord.js](https://img.shields.io/badge/discord.js-v14.25.0-blue.svg?logo=discord&logoColor=white)](https://discord.js.org/)
 [![Node.js](https://img.shields.io/badge/node.js-16+-green.svg?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Sapphire Framework](https://img.shields.io/badge/Sapphire-v5.4.0-7c3aed.svg)](https://www.sapphirejs.dev/)
-[![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Proprietary-orange.svg)](LICENSE)
 [![MongoDB](https://img.shields.io/badge/MongoDB-v9.0.0-47A248.svg?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 
 </div>
@@ -20,9 +20,9 @@ A powerful, all-in-one Discord bot designed exclusively for Insko's Discord comm
 
 ### 📺 YouTube Integration
 
-Real-time notifications for your YouTube channel using push-based webhooks (PubSubHubbub):
+Real-time notifications for Insko's YouTube channel using push-based webhooks (PubSubHubbub):
 
-- **Live Stream Alerts** - Get notified within seconds when you go live
+- **Live Stream Alerts** - Notifies within seconds when a stream goes live
 - **Video Upload Notifications** - Instant alerts for new video uploads
 - **Stream End Detection** - Automatically updates when streams end
 - **Bot Presence Updates** - Shows "Live" status in Discord during streams
@@ -38,12 +38,12 @@ Create custom greetings for new members and farewells for those who leave:
 
 ### 🛡️ Auto-Moderation
 
-Keep your server clean with automated moderation:
+Keeps the server clean with automated moderation:
 
 - **Anti-Spam Protection** - Detects message/mention spam with configurable thresholds
-- **Link Filtering** - Block unwanted links with whitelist support
+- **Link Filtering** - Blocks unwanted links with whitelist support
 - **Bad Word Filter** - Automatic profanity filtering with custom wordlists
-- **Flexible Actions** - Choose from warn, timeout, kick, or ban
+- **Flexible Actions** - Configurable actions: warn, timeout, kick, or ban
 - **AI-Powered Flagging** - Google Gemini AI analyzes suspicious content for review
 
 ### 📝 Advanced Logging
@@ -57,10 +57,10 @@ Comprehensive server activity logging:
 
 ### ⭐ Starboard
 
-Highlight the best content in your community:
+Highlights the best content in the community:
 
 - **Community-Curated** - Members star their favorite messages
-- **Customizable** - Set your own emoji and star threshold
+- **Customizable** - Configurable emoji and star threshold
 - **Media Support** - Images from starred messages displayed in starboard
 - **Live Updates** - Star counts update in real-time
 
@@ -76,13 +76,13 @@ Auto-updating voice channels showing server stats:
 
 User-friendly help menu with dropdown navigation:
 
-- **Permission-Aware** - Shows only commands you can use
+- **Permission-Aware** - Shows only commands the user has access to
 - **Ephemeral Responses** - Private help messages
 - **Beautiful Design** - Modern Components V2 styling
 
 ## 🎯 Getting Started
 
-Use `/help` in Discord to see all available commands and start configuring the bot for your server!
+Use `/help` in Discord to see all available commands and features!
 
 ## 🎮 Commands & Features
 
@@ -100,7 +100,7 @@ Greet new members and say goodbye to those who leave:
 
 ### 🛡️ Auto-Moderation
 
-Protect your server from spam, unwanted links, and bad words:
+Protects the server from spam, unwanted links, and bad words:
 
 - `/automod` - Configure spam detection, link filtering, and bad word filters
 - Set custom actions: warn, timeout, kick, or ban
@@ -140,7 +140,7 @@ Get notified about YouTube content:
 
 ### 🔧 Report System
 
-Allow users to report content:
+Allows users to report content:
 
 - Right-click message → Apps → Report Message
 - Reports sent to configured report channel
@@ -177,21 +177,21 @@ Built with modern technologies:
 ## 📄 Legal & Privacy
 
 - **[Terms of Service](TERMS_OF_SERVICE.md)** - Terms and conditions for using the bot
-- **[Privacy Policy](PRIVACY_POLICY.md)** - How we collect, use, and protect your data
-- **[License](LICENSE)** - MIT License for the source code
+- **[Privacy Policy](PRIVACY_POLICY.md)** - How data is collected, used, and protected
+- **[License](LICENSE)** - Proprietary software - not for public use or distribution
 
 By using INSKO Bot, you agree to our Terms of Service and Privacy Policy.
 
 ## 🔒 Data & Security
 
-We take your privacy seriously:
+Privacy and security are taken seriously:
 
-- ✅ **No data selling** - Your data is never sold or shared with third parties for marketing
-- ✅ **Minimal collection** - We only collect data necessary for bot functionality
+- ✅ **No data selling** - Data is never sold or shared with third parties for marketing
+- ✅ **Minimal collection** - Only collects data necessary for bot functionality
 - ✅ **Secure storage** - All data is stored in encrypted MongoDB database
 - ✅ **User control** - Members can request data deletion by contacting server administrators
 - ✅ **Transparent AI** - AI analysis is opt-in and only for moderation assistance
-- ✅ **GDPR & CCPA compliant** - We respect your data rights
+- ✅ **GDPR & CCPA compliant** - Respects data rights
 - ✅ **Private bot** - Developed exclusively for Insko's community
 
 For details, see our [Privacy Policy](PRIVACY_POLICY.md).
