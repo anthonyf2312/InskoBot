@@ -5,7 +5,26 @@ All notable changes to INSKO Bot will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2025-11-XX
+## [Unreleased]
+
+### ✨ Added
+
+#### 🎭 Auto-Role System
+
+- **Automatic Role Assignment** - New members automatically receive a configured role when joining
+- **Staff Management** - `/autorole` command with three subcommands:
+  - `/autorole set <role>` - Configure which role to assign automatically
+  - `/autorole remove` - Disable auto-role assignment
+  - `/autorole view` - View current auto-role configuration
+- **Smart Validation**:
+  - Prevents assigning managed roles (bot roles, integration roles)
+  - Validates role hierarchy to ensure bot can assign the role
+  - Prevents setting @everyone as auto-role
+  - Automatically detects and handles deleted roles
+- **Permission-Based** - Only users with "Manage Server" permission can use this command
+- **Invisible to Members** - Command is hidden from users without proper permissions
+
+## [1.0.0] - 2025-01-XX
 
 ### 🎉 Initial Release
 
@@ -26,6 +45,12 @@ Welcome to INSKO Bot! A powerful, all-in-one Discord bot for content creators an
 - Farewell messages when members leave
 - Placeholders: `{user}`, `{server}`, `{memberCount}`
 - Test mode to preview messages before enabling
+
+#### 🎭 Auto-Role
+
+- Automatic role assignment for new members
+- Staff-only configuration commands
+- Smart validation and error handling
 
 #### 🛡️ Auto-Moderation
 
@@ -74,6 +99,7 @@ Welcome to INSKO Bot! A powerful, all-in-one Discord bot for content creators an
 - `/help` - View all commands and features
 - `/welcome` - Configure welcome messages
 - `/farewell` - Configure farewell messages
+- `/autorole` - Configure automatic role assignment
 - `/automod` - Auto-moderation settings
 - `/logs` - Logging configuration
 - `/starboard` - Starboard settings
@@ -104,4 +130,3 @@ Ideas for future updates:
 - This is a private bot for Insko
 - Optimized for Insko
 - Built with Discord.js v14 and Sapphire Framework
-

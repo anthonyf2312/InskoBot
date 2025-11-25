@@ -36,6 +36,15 @@ Create custom greetings for new members and farewells for those who leave:
 - **Separate Channels** - Configure different channels for welcomes and farewells
 - **Test Mode** - Preview your messages before going live
 
+### 🎭 Auto-Role
+
+Automatically assign roles to new members when they join:
+
+- **Instant Assignment** - New members receive roles automatically upon joining
+- **Staff Control** - Only members with "Manage Server" permission can configure
+- **Smart Validation** - Prevents invalid role assignments (managed roles, hierarchy issues)
+- **Easy Management** - Simple commands to set, view, or remove auto-roles
+
 ### 🛡️ Auto-Moderation
 
 Keeps the server clean with automated moderation:
@@ -97,6 +106,15 @@ Greet new members and say goodbye to those who leave:
 - `/welcome` - Configure welcome messages and channels
 - `/farewell` - Configure farewell messages and channels
 - Test mode available to preview messages
+
+### 🎭 Auto-Role
+
+Automatically assign roles to new members:
+
+- `/autorole set <role>` - Set a role to automatically assign to new members
+- `/autorole remove` - Remove auto-role configuration
+- `/autorole view` - View current auto-role settings
+- Requires "Manage Server" permission
 
 ### 🛡️ Auto-Moderation
 
