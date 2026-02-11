@@ -4,216 +4,197 @@
 
 # INSKO Bot
 
-[![Discord.js](https://img.shields.io/badge/discord.js-v14.25.0-blue.svg?logo=discord&logoColor=white)](https://discord.js.org/)
-[![Node.js](https://img.shields.io/badge/node.js-16+-green.svg?logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Sapphire Framework](https://img.shields.io/badge/Sapphire-v5.4.0-7c3aed.svg)](https://www.sapphirejs.dev/)
-[![License](https://img.shields.io/badge/license-Proprietary-orange.svg)](LICENSE)
-[![MongoDB](https://img.shields.io/badge/MongoDB-v9.0.0-47A248.svg?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![Discord.js](https://img.shields.io/badge/discord.js-v14.25-5865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.js.org/)
+[![Sapphire](https://img.shields.io/badge/Sapphire-v5.4-7c3aed.svg?style=for-the-badge)](https://www.sapphirejs.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-9.0-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-20+-339933.svg?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![License](https://img.shields.io/badge/License-Proprietary-E34F26.svg?style=for-the-badge)](LICENSE)
+
+**A feature-rich, all-in-one Discord bot built exclusively for Insko's community.**
+
+Passport profiles · XP & leveling · Last.fm · Music ratings · Starboard · YouTube alerts · QOTD · and more — all with beautiful **Components V2** designs.
 
 </div>
 
-A powerful, all-in-one Discord bot designed exclusively for Insko's Discord community. Built with Discord.js v14 and Sapphire Framework, featuring beautiful **Components V2** message designs.
+---
 
-**Note:** This is a private bot and is not available for public use or invitation to other servers.
+## Features
 
-## ✨ Features
+### 🆔 Passport & Profiles
 
-### 📺 YouTube Integration
+Every member builds a personalised passport card through activity — displaying level, XP, badges, stats, reputation, and more rendered as server-side images.
 
-Real-time notifications for Insko's YouTube channel using push-based webhooks (PubSubHubbub):
+- **Customisable themes** — Default, Midnight, Gold, Forest, Ocean, Sunset
+- **Custom colours & backgrounds** — Unlocked at Level 5 and Level 15 respectively
+- **Badge showcase** — Earned badges with tier-specific icons
+- **Leaderboard** — Top 10 users ranked by level and XP
+- **Privacy controls** — Toggle visibility of safety rating, join date, and reputation
 
-- **Live Stream Alerts** - Notifies within seconds when a stream goes live
-- **Video Upload Notifications** - Instant alerts for new video uploads
-- **Stream End Detection** - Automatically updates when streams end
-- **Bot Presence Updates** - Shows "Live" status in Discord during streams
-- **Quota Efficient** - Uses minimal API quota (push-based, not polling)
+### 📊 XP & Leveling System
 
-### 👋 Welcome & Farewell Messages
+Earn XP from messages, voice activity, and reactions with built-in anti-exploit protections.
 
-Create custom greetings for new members and farewells for those who leave:
+- **Messages** — 15–25 XP per message (60s cooldown)
+- **Voice channels** — 5 XP per minute (120 min cap per session)
+- **Reactions** — 2 XP given, 5 XP received (5s cooldown)
+- **Anti-abuse** — Spam detection, similarity checks, rate limiting, minimum message length
+- **100 levels** with progressive titles from Newcomer to Legendary
+- **Level rewards** — Profile customisation, custom backgrounds, reaction boost, extended badge showcase, animated borders, particle effects, and Legendary status
 
-- **Custom Messages** - Use placeholders like `{user}`, `{server}`, `{memberCount}`
-- **Separate Channels** - Configure different channels for welcomes and farewells
-- **Test Mode** - Preview your messages before going live
+### 🏆 Badges
 
-### 🎭 Auto-Role
+12 badges with 5 tiers each, automatically awarded based on activity thresholds.
 
-Automatically assign roles to new members when they join:
+| Badge | Earned By |
+|-------|-----------|
+| ⭐ Stargazer | Messages reaching the starboard |
+| 🛡️ Guardian | Long-term membership with clean record |
+| 🎨 Artist | Images reaching 10+ stars |
+| 💬 Chatterbox | Total messages sent |
+| 🔥 Dedicated | Longest messaging streak |
+| 🦋 Social Butterfly | Stars received on messages |
+| 🤝 Helping Hand | Reactions given to others |
+| 📅 Consistent | Current active messaging streak |
+| 🎙️ Voice Active | Hours spent in voice channels |
+| ⚡ Reactor | Reactions received |
+| 🎭 Sko | Having "sko" in your display name |
+| 👑 Legendary | Reaching Level 100 |
 
-- **Instant Assignment** - New members receive roles automatically upon joining
-- **Staff Control** - Only members with "Manage Server" permission can configure
-- **Smart Validation** - Prevents invalid role assignments (managed roles, hierarchy issues)
-- **Easy Management** - Simple commands to set, view, or remove auto-roles
+### 🎧 Last.fm Integration
 
-### 🛡️ Auto-Moderation
+Full Last.fm integration with OAuth account linking, inspired by .fmbot.
 
-Keeps the server clean with automated moderation:
+- **Now Playing** — Current track with play count, genre tags, and album art
+- **Top lists** — Top tracks, artists, albums, and genres with time period filters
+- **Who Knows** — Server leaderboards for artists, tracks, and albums
+- **Taste comparison** — Compatibility percentage with shared artist breakdown
+- **Listening streaks** — Consecutive plays of the same artist, album, or track
+- **Weekly overview** — Now playing + top 3 artists, tracks, and albums
 
-- **Anti-Spam Protection** - Detects message/mention spam with configurable thresholds
-- **Link Filtering** - Blocks unwanted links with whitelist support
-- **Bad Word Filter** - Automatic profanity filtering with custom wordlists
-- **Flexible Actions** - Configurable actions: warn, timeout, kick, or ban
-- **AI-Powered Flagging** - Google Gemini AI analyzes suspicious content for review
+### 🎵 Music Ratings
 
-### 📝 Advanced Logging
+Rate songs, albums, and EPs on a 1.0–10.0 scale with Spotify-powered search.
 
-Comprehensive server activity logging:
+- **Community ratings** — Browse recent, top-rated, and most popular
+- **Song versions** — Separate tracking for Original, Remix, Cover, Live, and Acoustic
+- **Filter by type** — Songs, Albums, or EPs
+- **Edit ratings** — Update your 25 most recent ratings anytime
 
-- **Message Edits & Deletions** - Track all message changes with before/after content
-- **Member Events** - Log joins and leaves
-- **Moderation Actions** - Automatic logging of all auto-mod actions
-- **Media Preservation** - Images and attachments displayed in logs
+### 🎵 Reaction Box
+
+Community song submissions for Insko to react to on YouTube, running in 7-day cycles.
+
+- **Submit songs** — Spotify search via modal
+- **Community voting** — Upvote and downvote buttons on submissions
+- **Auto-approval** — Songs meeting the upvote threshold are moved to an approved channel
+- **Configurable** — Set channels, thresholds, and cycle limits
 
 ### ⭐ Starboard
 
-Highlights the best content in the community:
+Highlight the best content in the community with real-time star tracking.
 
-- **Community-Curated** - Members star their favorite messages
-- **Customizable** - Configurable emoji and star threshold
-- **Media Support** - Images from starred messages displayed in starboard
-- **Live Updates** - Star counts update in real-time
-
-### 📊 Server Statistics
-
-Auto-updating voice channels showing server stats:
-
-- **Live Member Count** - Updates every 10 minutes
-- **Bot Online Status** - Shows if bot is online/offline
-- **Voice Channel Display** - Clean, organized stat channels
-
-### 📚 Interactive Help System
-
-User-friendly help menu with dropdown navigation:
-
-- **Permission-Aware** - Shows only commands the user has access to
-- **Ephemeral Responses** - Private help messages
-- **Beautiful Design** - Modern Components V2 styling
-
-## 🎯 Getting Started
-
-Use `/help` in Discord to see all available commands and features!
-
-## 🎮 Commands & Features
-
-### 📚 Help
-
-- `/help` - Interactive help menu with dropdown navigation
+- **Configurable threshold** — 1–50 stars required
+- **Live updates** — Star count updates as reactions change
+- **Media support** — Images and attachments displayed in starboard posts
+- **Components V2** — Modern Discord message styling
 
 ### 👋 Welcome & Farewell
 
-Greet new members and say goodbye to those who leave:
+Custom greetings and goodbye messages with placeholder support.
 
-- `/welcome` - Configure welcome messages and channels
-- `/farewell` - Configure farewell messages and channels
-- Test mode available to preview messages
+- **Placeholders** — `{user}`, `{server}`, `{memberCount}`
+- **Separate channels** — Independent configuration for welcomes and farewells
+- **Test mode** — Preview messages before going live
 
 ### 🎭 Auto-Role
 
-Automatically assign roles to new members:
+Automatically assign a role to new members on join with hierarchy and permission validation.
 
-- `/autorole set <role>` - Set a role to automatically assign to new members
-- `/autorole remove` - Remove auto-role configuration
-- `/autorole view` - View current auto-role settings
-- Requires "Manage Server" permission
+### ❓ Question of the Day
 
-### 🛡️ Auto-Moderation
+Automated daily questions posted on a schedule — AI-generated via Google Gemini or manually queued.
 
-Protects the server from spam, unwanted links, and bad words:
+- **Scheduled posting** — Configurable time (UTC) and channel
+- **Queue system** — Add, list, and remove custom questions
+- **AI fallback** — Auto-generates a question when the queue is empty
+- **Optional ping role** — Notify members of new questions
 
-- `/automod` - Configure spam detection, link filtering, and bad word filters
-- Set custom actions: warn, timeout, kick, or ban
-- Configure thresholds and whitelists
+### 📺 YouTube Integration
 
-### 📝 Logging
+Real-time YouTube notifications using PubSubHubbub push webhooks.
 
-Track all server activity:
-
-- `/logs` - Set logging channel and toggle log types
-- Logs message edits, deletions, member events, and moderation actions
-- Media preservation for deleted images
-
-### ⭐ Starboard
-
-Highlight community favorites:
-
-- `/starboard` - Configure starboard channel, emoji, and threshold
-- Members react with stars to feature messages
-- Automatic updates when star counts change
+- **Live stream alerts** — Notified within seconds when going live
+- **Video upload notifications** — Instant alerts for new uploads
+- **Stream end detection** — Automatic status updates
+- **Bot presence** — Shows "Live" status in Discord during streams
+- **Quota efficient** — Push-based, not polling (~3 API units per notification)
 
 ### 📊 Server Statistics
 
-Display live server stats in voice channels:
+Auto-updating voice channels displaying live server stats.
 
-- `/stats` - Setup or remove statistics channels
-- Shows member count and bot status
-- Auto-updates every 10 minutes
+- **Member count** — Updates every 10 minutes
+- **Bot status** — Shows online/offline with watchdog monitoring
 
-### 📺 YouTube Integration _(Owner Only)_
+### 🔨 Moderation & Reports
 
-Get notified about YouTube content:
+- **Purge** — Bulk delete up to 100 messages, optionally filtered by user
+- **Report system** — Right-click context menu to report messages to moderators
 
-- `/notification` - Set channels for live streams and video uploads
-- `/youtube` - Manage YouTube channel subscriptions
-- Real-time push notifications via webhooks
+### 🔒 Privacy & Data Management
 
-### 🔧 Report System
+GDPR/CCPA-compliant data tools — view, export, and delete personal data.
 
-Allows users to report content:
+### 📚 Help System
 
-- Right-click message → Apps → Report Message
-- Reports sent to configured report channel
-
-## 🔑 Permission System
-
-Commands automatically adjust based on user permissions:
-
-- **Everyone** - Help menu, report system, and starboard reactions
-- **Staff** (Manage Guild/Messages) - Moderation, logging, welcomes, stats
-- **Bot Owner** - YouTube integration and advanced settings
-
-## 💬 Message Placeholders
-
-Use these in welcome and farewell messages:
-
-- `{user}` - Mentions the user (@Username)
-- `{server}` - Server name
-- `{memberCount}` - Total member count
-
-**Example**: `Welcome {user} to {server}! You are member #{memberCount}!`
-
-## 🛠️ Tech Stack
-
-Built with modern technologies:
-
-- **Discord.js v14** - Latest Discord API with Components V2
-- **Sapphire Framework** - Command handling and bot structure
-- **MongoDB** - Database for server configurations
-- **Google Gemini AI** - AI-powered content moderation
-- **YouTube Data API v3** - Official YouTube integration
-- **PubSubHubbub** - Real-time push notifications
-
-## 📄 Legal & Privacy
-
-- **[Terms of Service](TERMS_OF_SERVICE.md)** - Terms and conditions for using the bot
-- **[Privacy Policy](PRIVACY_POLICY.md)** - How data is collected, used, and protected
-- **[License](LICENSE)** - Proprietary software - not for public use or distribution
-
-By using INSKO Bot, you agree to our Terms of Service and Privacy Policy.
-
-## 🔒 Data & Security
-
-Privacy and security are taken seriously:
-
-- ✅ **No data selling** - Data is never sold or shared with third parties for marketing
-- ✅ **Minimal collection** - Only collects data necessary for bot functionality
-- ✅ **Secure storage** - All data is stored in encrypted MongoDB database
-- ✅ **User control** - Members can request data deletion by contacting server administrators
-- ✅ **Transparent AI** - AI analysis is opt-in and only for moderation assistance
-- ✅ **GDPR & CCPA compliant** - Respects data rights
-- ✅ **Private bot** - Developed exclusively for Insko's community
-
-For details, see our [Privacy Policy](PRIVACY_POLICY.md).
+Interactive, permission-aware help menu with dropdown navigation and Components V2 styling. Only shows commands and categories the user has access to.
 
 ---
 
+## Permission System
+
+| Level | Who | Access |
+|-------|-----|--------|
+| **Everyone** | All members | Passport, Level, Rewards, Last.fm, Music Ratings, Reaction Box, Privacy, Report, Help |
+| **Staff** | Manage Guild / Messages | + Welcome, Farewell, Autorole, Starboard, Stats, Report Config, Badge Admin, XP Admin |
+| **Owner** | `OWNER_IDS` env var | + YouTube, QOTD, Dev, Shutdown, Backfill, Maintenance |
+
+---
+
+## Tech Stack
+
+<div align="center">
+
+| Technology | Purpose |
+|:----------:|:--------|
+| ![Discord.js](https://img.shields.io/badge/discord.js-5865F2?style=flat-square&logo=discord&logoColor=white) | Discord API with Components V2 |
+| ![Sapphire](https://img.shields.io/badge/Sapphire_Framework-7c3aed?style=flat-square) | Command handling, listeners, preconditions |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | Type-safe codebase |
+| ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) | Database for all guild configs, profiles, and ratings |
+| ![Spotify](https://img.shields.io/badge/Spotify_API-1DB954?style=flat-square&logo=spotify&logoColor=white) | Song and album search for ratings and Reaction Box |
+| ![Last.fm](https://img.shields.io/badge/Last.fm_API-D51007?style=flat-square&logo=lastdotfm&logoColor=white) | Scrobble data, listening stats, and leaderboards |
+| ![YouTube](https://img.shields.io/badge/YouTube_Data_API-FF0000?style=flat-square&logo=youtube&logoColor=white) | Real-time push notifications via PubSubHubbub |
+| ![Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?style=flat-square&logo=google&logoColor=white) | AI-generated QOTD questions |
+| ![Canvas](https://img.shields.io/badge/@napi--rs/canvas-000000?style=flat-square) | Server-side image rendering for passport and level cards |
+
+</div>
+
+---
+
+## Legal & Privacy
+
+- [Terms of Service](TERMS_OF_SERVICE.md)
+- [Privacy Policy](PRIVACY_POLICY.md)
+- [License](LICENSE) — Proprietary software
+
+> This is a **private bot** developed exclusively for Insko's Discord community. It is not available for public use, self-hosting, or invitation to other servers.
+
+---
+
+<div align="center">
+
 **Made with ❤️ for Insko**
+
+</div>
+
