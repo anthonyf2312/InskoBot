@@ -5,129 +5,106 @@ All notable changes to INSKO Bot will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.1] - 2025-11-XX
-
-### ✨ Added
-
-#### 🎭 Auto-Role System
-
-- **Automatic Role Assignment** - New members automatically receive a configured role when joining
-- **Staff Management** - `/autorole` command with three subcommands:
-  - `/autorole set <role>` - Configure which role to assign automatically
-  - `/autorole remove` - Disable auto-role assignment
-  - `/autorole view` - View current auto-role configuration
-- **Smart Validation**:
-  - Prevents assigning managed roles (bot roles, integration roles)
-  - Validates role hierarchy to ensure bot can assign the role
-  - Prevents setting @everyone as auto-role
-  - Automatically detects and handles deleted roles
-- **Permission-Based** - Only users with "Manage Server" permission can use this command
-- **Invisible to Members** - Command is hidden from users without proper permissions
-
-## [1.0.0] - 2025-11-XX
+## [1.0.0] - 2026-07-10
 
 ### 🎉 Initial Release
 
-Welcome to INSKO Bot! A powerful, all-in-one Discord bot for content creators and community management.
+INSKO Bot 1.0 — a feature-rich, all-in-one Discord bot built exclusively for Insko's community, with every message styled using Discord's modern **Components V2** design.
 
-### ✨ Features Added
+### ✨ Features
 
-#### 📺 YouTube Integration
+#### 🛂 Passports & Leveling
 
-- Real-time notifications for live streams and video uploads
-- Bot status updates to "Live" when streaming
-- Stream end detection with automatic message updates
-- Instant push notifications (no polling required)
+- XP earned per message with configurable rates and cooldowns
+- `/rank` renders each member's personalised passport as a server-side PNG
+- Web-based passport editor with live animated preview and autosave — layouts, themes, fonts, colours, gradients, uploaded backgrounds, avatar borders, progress-bar styling, card shapes, and cosmetic effects
+- Customisation unlocks progressively from Level 5 to Level 50
+- OG badge for long-standing members
+- Role rewards granted automatically at configured levels
+- `/leaderboard` — top 10 members by XP
+- Level-up announcements featuring the member's own card
 
-#### 👋 Welcome & Farewell Messages
+#### 🎵 Music
 
-- Custom greeting messages for new members
-- Farewell messages when members leave
-- Placeholders: `{user}`, `{server}`, `{memberCount}`
-- Test mode to preview messages before enabling
+- YouTube playback in voice channels via a dedicated Lavalink v4 node
+- `/play` with live search autocomplete, video URLs, and playlist support
+- Now-playing card with pause, skip, stop, and queue controls
+- `/pause`, `/skip`, `/stop`, `/queue`, `/volume`, `/nowplaying`
+- Optional DJ role gating for playback controls
+- Automatic disconnect when the voice channel empties or the queue ends
 
-#### 🎭 Auto-Role
+#### 🛡️ Moderation
 
-- Automatic role assignment for new members
-- Staff-only configuration commands
-- Smart validation and error handling
+- `/ban`, `/unban`, `/kick`, `/mute`, `/unmute`, `/warn`, `/purge`
+- Numbered cases stored in the database and posted to the mod log as colour-coded cards
+- Human-friendly timeout durations (`10m`, `1h30m`, `2d`)
+- Role-hierarchy checks on every action
 
-#### 🛡️ Auto-Moderation
+#### 🤖 AutoMod
 
-- **Anti-Spam** - Detect and remove spam messages
-- **Link Filter** - Block unwanted links with whitelist support
-- **Bad Word Filter** - Automatic profanity detection
-- **Custom Actions** - Warn, timeout, kick, or ban offenders
-- **AI-Powered** - Google Gemini AI flags suspicious content for review
+- Detection for blocked words, invite links, mass mentions, flooding, and repeated messages
+- Staff alert cards with one-click Delete / Warn / Mute / Safe actions
+- Alert throttling — one alert per incident, not one per message
+- Configurable exempt role
 
-#### 📝 Advanced Logging
+#### 🛃 Verification
 
-- Message edits and deletions tracked
-- Member join and leave events logged
-- Moderation actions automatically recorded
-- Media preservation for deleted images
+- Persistent Verify panel granting a configured role
+- Three challenge types: one-click button, image captcha, and math question
+
+#### 📜 Server Logging
+
+- Message edits and deletions (with attachments)
+- Member joins and leaves
+- Manual moderation actions attributed via the audit log
+- Role and nickname changes
+- Independent per-category toggles
 
 #### ⭐ Starboard
 
-- Community-curated content highlights
-- Customizable star emoji and threshold
-- Real-time star count updates
-- Image support in starboard posts
+- Configurable trigger emoji and threshold
+- Live star-count updates and media support
+
+#### 👋 Welcomer
+
+- Custom greeting templates with `{user}`, `{username}`, `{server}`, and `{memberCount}` placeholders
+
+#### 📺 YouTube Alerts
+
+- Per-channel subscriptions with rich notification cards
+- Live streams and uploads distinguished automatically, each routable to its own channel
+- Premiere-aware announcements and optional role pings
 
 #### 📊 Server Statistics
 
-- Auto-updating voice channels showing server stats
-- Live member count display
-- Bot online/offline status indicator
-- Updates every 10 minutes
+- Auto-updating voice-channel counters for members, humans, bots, and boosts
 
-#### 📚 Help System
+#### 🚨 Reports
 
-- Interactive help menu with dropdown navigation
-- Shows only commands you have permission to use
-- Private responses (ephemeral messages)
-- Modern, beautiful design
+- Right-click context menu and `/report message` for reporting content to staff
+- Full report cards with staff action buttons and private reporter confirmation
 
-#### 🔧 Report System
+#### ⚙️ Configuration
 
-- Right-click any message → Apps → Report Message
-- Reports sent to configured moderation channel
-- Includes message content and user information
+- `/config` — interactive in-Discord dashboard covering every module
+- `/admin` — XP tools, case management, passport resets, and system actions
 
-### 🎮 Commands Available
+#### 🌐 Web Dashboard
 
-- `/help` - View all commands and features
-- `/welcome` - Configure welcome messages
-- `/farewell` - Configure farewell messages
-- `/autorole` - Configure automatic role assignment
-- `/automod` - Auto-moderation settings
-- `/logs` - Logging configuration
-- `/starboard` - Starboard settings
-- `/stats` - Server statistics setup
-- `/notification` - YouTube notification channels _(Owner Only)_
-- `/youtube` - Manage YouTube subscriptions _(Owner Only)_
-- `/report` - Report system configuration
+- Discord OAuth2 login for members with Manage Server
+- Every bot setting editable in the browser, applied instantly
+- Composer for building and editing Components V2 messages with live preview, drafts, and templates
+- Real-time event feed over WebSockets
+- Overview page with stat tiles, leaderboard, and recent cases
 
-### 🎨 Design
+#### 🔒 Private Access
 
-All messages use Discord's modern **Components V2** design with:
-
-- Beautiful containers with accent colors
-- Visual separators for clean layouts
-- Media galleries for images
-- Rich markdown formatting
-
----
-
-## 🔮 Coming Soon
-
-Ideas for future updates:
+- Approval-based server allowlist with owner review
+- Access-request form on the landing page
 
 ---
 
 ## 📝 Notes
 
-- This is a private bot for Insko
-- Optimized for Insko
-- Built with Discord.js v14 and Sapphire Framework
-
+- This is a private bot for Insko's community
+- Built with Discord.js v14, TypeScript, Prisma, and PostgreSQL
